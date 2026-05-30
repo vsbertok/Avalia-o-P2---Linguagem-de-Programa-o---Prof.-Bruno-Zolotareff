@@ -7,7 +7,7 @@ Dupla:
 - Vitor Souza Bertok
 
 # Máquina de Café com POO. 
-# Resposta da pergunta:
+## Resposta da pergunta:
 
 Herança: O primeiro paradigma é a Herança. Ao utilizarmos `public class Cafe extends Drink`, estamos fazendo com que a classe `Cafe` herde os atributos e métodos da classe mãe (`Drink`). Isso evita a repetição de código, pois características comuns a todas as bebidas (como `sabor` e `valor`) são escritas apenas uma vez, sendo reaproveitadas por todas as classes filhas que a máquina de café vier a ter.
 
