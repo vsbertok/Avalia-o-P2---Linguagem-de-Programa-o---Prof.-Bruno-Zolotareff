@@ -6,7 +6,7 @@ Dupla:
 - Francismar José Haither
 - Vitor Souza Bertok
 
-# Máquina de Café com POO.
+# Máquina de Café com POO
 
 ## Resposta da pergunta:
 
