@@ -5,5 +5,6 @@ Avaliação P2 - 30/05/2026
 - Francismar José Haither
 - Vitor Souza Bertok
 
-Máquina de Café com POO. Resposta da pergunta:
+Máquina de Café com POO. 
+Resposta da pergunta:
 - 
