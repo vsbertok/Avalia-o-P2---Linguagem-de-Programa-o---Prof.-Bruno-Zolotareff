@@ -11,20 +11,21 @@ Dupla:
 - Abstração: na classe Drink determinados os atributos “valor” (private Double valor;) e “sabor” (private String sabor;) como abstratos, mantendo, dessa forma dados seguros e ocultos, sendo necessário o uso de getters e setters para trazê-los à utilização. Dessa forma, permite que, como já dito, os atributos “sabor” e “valor” abstratos para as demais classes do software, levando ao próximo paradigma;
 - Encapsulamento: Ao utilizar os getters e setters dentro da classe drink, da seguinte forma:
 
-  		```
-   		(public Drink(String sabor, Double valor); {
-          this.sabor = sabor;
-          this.valor = valor;
-  	      }
+
+  ```java
+  (public Drink(String sabor, Double valor); {
+  this.sabor = sabor;
+  this.valor = valor;
+  }
   
-           // Getters and Setters
-           public String getSabor() {
-	 	return sabor;
-	 	}
+  // Getters and Setters
+  public String getSabor() {
+  return sabor;
+  }
   
-		public void setSabor(String sabor) {
-        this.sabor = sabor;
-		```
+  public void setSabor(String sabor) {
+  this.sabor = sabor;
+  ```
 
 Estamos encapsulando estes atributos abstratos e setando-os em um novo atributo, público, para ser resgatado nas demais classes utilizadas, neste caso, a classe café.
 
