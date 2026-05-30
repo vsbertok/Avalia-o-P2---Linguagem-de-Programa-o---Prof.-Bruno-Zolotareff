@@ -7,9 +7,12 @@ Dupla:
 - Vitor Souza Bertok
 
 # Máquina de Café com POO. Resposta da pergunta:
-- O primeiro paradigma é a Herança, pois quando utilizamos "public class Cafe extends Drink {", estamos herdando da classe abstrata Drink o “sabor” e o “valor” para serem utilizados e aplicados por meio da utilização de vetor e do comando case para definir o menu de escolha do usuário da máquina de café. Dessa forma, manteremos os atributos valor e sabor abstratos na classe Drink, que define o próximo paradigma;
-- Abstração: na classe Drink determinados os atributos “valor” (private Double valor;) e “sabor” (private String sabor;) como abstratos, mantendo, dessa forma dados seguros e ocultos, sendo necessário o uso de getters e setters para trazê-los à utilização. Dessa forma, permite que, como já dito, os atributos “sabor” e “valor” abstratos para as demais classes do software, levando ao próximo paradigma;
-* Encapsulamento: Ao utilizar os getters e setters dentro da classe drink, da seguinte forma:
+
+Herança: O primeiro paradigma é a Herança. Ao utilizarmos public class Cafe extends Drink, estamos fazendo com que a classe Cafe herde os atributos e métodos da classe mãe (Drink). Isso evita a repetição de código, pois características comuns a todas as bebidas (como sabor e valor) são escritas apenas uma vez, sendo reaproveitadas por todas as classes filhas que a máquina de café vier a ter.
+
+Abstração: A Abstração consiste em focar nas características essenciais do objeto, ignorando detalhes menos importantes. Ao criarmos a classe Drink, criamos um "molde" conceitual para qualquer bebida. A máquina de café não prepara uma "Bebida" genérica, ela prepara um "Café" específico. A abstração nos permite definir que toda bebida terá uma forma de ser preparada, deixando os detalhes exatos de como isso é feito para as classes específicas.
+
+Encapsulamento: O Encapsulamento garante a segurança e a integridade dos dados da nossa aplicação. Na classe Drink, definimos os atributos sabor e valor como privados (private). Com isso, impedimos que eles sejam acessados ou modificados diretamente por outras partes do código. Para permitir a interação segura com esses atributos, criamos métodos públicos (getters para ler a informação e setters para alterá-la), da seguinte forma:
 
 ```java
 public Drink(String sabor, Double valor) {
@@ -27,8 +30,5 @@ public void setSabor(String sabor) {
 }
 ```
 
-Estamos encapsulando estes atributos abstratos e setando-os em um novo atributo, público, para ser resgatado nas demais classes utilizadas, neste caso, a classe café.
-
-- E referindo-se ao polimorfismo, poderíamos criar outras classes para outras bebidas, como por exemplo, chás, batidas, etc, utilizando as características da classe drink, ou seja, demais bebidas partindo do princípio da estrutura feita dentro da classe Drink.
-Concluímos que, em POO esse paradigma torna possível obter segurança, praticidade, confiabilidade, menores passos para solucionar erros e problemas e, ainda, utilizar atributos protegidos para definir outras classes, sem permitir que seu conteúdo seja divulgado. Um paradigma excelente para trabalhos de programação. 
+Polimorfismo: Por fim, o Polimorfismo (que significa "várias formas") é o que nos dá flexibilidade. Se criarmos outras classes como Cha ou ChocolateQuente (que também herdam de Drink), o polimorfismo nos permite tratar todas elas de forma padronizada. Por exemplo, a máquina de café pode acionar um método prepararBebida() e, graças ao polimorfismo, o programa saberá exatamente como agir dependendo do tipo de objeto escolhido pelo usuário no menu (um café será preparado de um jeito, e um chá de outro), mesmo usando o mesmo comando básico. 
 
