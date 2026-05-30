@@ -20,7 +20,8 @@ Avaliação P2 - 30/05/2026
 	public void setSabor(String sabor) {
           this.sabor = sabor;)"
 		  ```
-  Estamos encapsulando estes atributos abstratos e setando-os em um novo atributo, público, para ser resgatado nas demais classes utilizadas, neste caso, a classe café.
+
+  - Estamos encapsulando estes atributos abstratos e setando-os em um novo atributo, público, para ser resgatado nas demais classes utilizadas, neste caso, a classe café.
 
 - E referindo-se ao polimorfismo, poderíamos criar outras classes para outras bebidas, como por exemplo, chás, batidas, etc, utilizando as características da classe drink, ou seja, demais bebidas partindo do princípio da estrutura feita dentro da classe Drink.
 Concluímos que, em POO esse paradigma torna possível obter segurança, praticidade, confiabilidade, menores passos para solucionar erros e problemas e, ainda, utilizar atributos protegidos para definir outras classes, sem permitir que seu conteúdo seja divulgado. Um paradigma excelente para trabalhos de programação. 
