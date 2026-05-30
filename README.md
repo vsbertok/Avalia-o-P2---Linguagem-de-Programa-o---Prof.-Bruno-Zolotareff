@@ -1,4 +1,4 @@
-# Avaliação P2 - Linguagem de Programação - Prof. Bruno Zolotareff
+# Avaliação P2 | Linguagem de Programação | Prof. Bruno Zolotareff
 
 Avaliação P2 - 30/05/2026
 
